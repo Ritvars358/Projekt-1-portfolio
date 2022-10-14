@@ -1,0 +1,211 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  color: white;
+  text-align: center;
+  align-items: center;
+  background: #5c258d;
+  background: linear-gradient(180deg, #4389a2, #5c258d);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: auto;
+}
+
+/* Bilder inom alla filer*/
+.bild {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  border: 5px white solid;
+  align-items: center;
+  margin-top: 25px;
+}
+.instagram_icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  top: 127px;
+  left: 870px;
+}
+.facebook_icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  top: 180px;
+  left: 870px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.gmail_icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  top: 290px;
+  left: 875px;
+}
+.Bild_css_upg1 {
+  position: relative;
+  left: 700px;
+  bottom: 5px;
+  height: 350px;
+  width: 350px;
+  border: 1px white solid;
+}
+#flexbox_uppgift_bild {
+  position: relative;
+  left: 700px;
+  bottom: 5px;
+  height: 350px;
+  width: 350px;
+  border: 1px white solid;
+}
+.about_me_bild {
+  background-size: contain;
+  height: 200px;
+  width: auto;
+}
+/*Slut på bilder här */
+
+/* Javascript menu button/submenu */
+.menu_dropdown {
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  border-color: white;
+  border-radius: 5px;
+}
+#submenu_1 {
+  display: none;
+  border-radius: 5px;
+}
+#submenu_1 .list1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding-top: 10px;
+}
+#submenu_1 .list2 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+#submenu_1 .list3 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+#submenu_2 {
+  display: none;
+  border-radius: 5px;
+}
+#submenu_2 .list4 {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+#submenu_2 .list5 {
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 10px;
+}
+#submenu_2 .list6 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+#btn_group_java .button_submenu_1 {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.button_submenu_2 {
+  padding-left: 228px;
+  padding-right: 228px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button_submenu_1 {
+  position: sticky;
+  top: 0;
+}
+/* Javascript menu/button slut här */
+
+/* Animation */
+span {
+  display: inline-block;
+  font-weight: bolder;
+  animation: mover 1s linear infinite;
+}
+@keyframes mover {
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(5px);
+  }
+  100% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  }
+}
+span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+span:nth-child(2) {
+  animation-delay: 1s;
+}
+span:nth-child(3) {
+  animation-delay: 1.5s;
+}
+span:nth-child(4) {
+  animation-delay: 2s;
+}
+span:nth-child(5) {
+  animation-delay: 2.5s;
+}
+span:nth-child(6) {
+  animation-delay: 3s;
+}
+span:nth-child(7) {
+  animation-delay: 3.5s;
+}
+/* Animation slut här*/
+
+/* Main menu buttons */
+.menu_list .button {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.menu_list .button:hover {
+  background-color: rgb(49, 14, 73);
+}
+/* Main menu buttons slut här */

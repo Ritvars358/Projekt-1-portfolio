@@ -1,0 +1,63 @@
+
+
+body {
+    background-color: lightblue;
+   
+}
+#rubrik {
+    text-align: center;
+    font-size: 150%;
+    margin: 10px;
+   border-top-style: dotted;
+   border-bottom-style: Dotted;
+   border-left-style: solid;
+   border-right-style: solid;
+}
+.text1 {
+    text-align: center;
+    font-size: 100%;
+    color: black;
+    padding: 20px;
+}
+#img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border-radius: 25%;
+    height: 50%;
+    border: 2px solid blueviolet;
+}
+#img:hover{
+    transform: scaleX(-1);
+}
+.google {
+    text-align: center;
+}
+.relativ {
+    text-align: center;
+}
+ 
+ 
+ 
+div {
+width: 345px;
+height: 25px;
+background-color: lightblue;
+font-weight: bold;
+position: relative;
+animation: mymove 5s infinite;
+text-align: center;
+}
+ 
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+ 
+@keyframes mymove {
+    from {left: 350px;}
+    to {left: 635px;}
+}
+ 
+ 

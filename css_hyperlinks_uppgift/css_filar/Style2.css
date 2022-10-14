@@ -1,0 +1,64 @@
+div {
+    border: grey 1px solid;
+}
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+   display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.wrapper #row1 {
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.wrapper #row2 {
+    display: flex;
+    background-color: antiquewhite;
+    flex: 1 1 auto;
+}
+
+.wrapper #col1 {
+    background-color: antiquewhite;
+    flex: 0 0 200px;
+    padding: 10px;
+}
+
+.wrapper #col2 {
+    background-color: antiquewhite;
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+.wrapper #col3 {
+    background-color: antiquewhite;
+    flex: 1 1 auto;
+    padding: 10px;
+}
+
+.wrapper #knapp1:hover {
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+}
+
+#menuitem {
+    color: blue;
+}
+
+#menusel {
+    color:black;
+}
+
