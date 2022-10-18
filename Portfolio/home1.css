@@ -7,7 +7,11 @@ body {
   text-align: center;
   align-items: center;
   background: #5c258d;
-  background: linear-gradient(180deg, #4389a2, #5c258d);
+  background: linear-gradient(
+    180deg,
+    #4389a2,
+    #5c258d
+  ); /* Gradient gör bara en blandning med två eller flera färger */
   background-repeat: no-repeat;
   min-height: 100vh;
   background-size: auto;
@@ -126,7 +130,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  cursor: pointer;
+  cursor: pointer; /* Byter din crosshair när du drar musspekaren över knapppen*/
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -167,13 +171,13 @@ span {
   }
   100% {
     text-shadow: 0 0 30px rgba(0, 0, 0, 0);
-  }
+  } /* Denna keyframes bestämmer vad som händer när den börjar, när hela processen är 50% klar och sist när den är klar */
 }
 span:nth-child(1) {
   animation-delay: 0.5s;
-}
+} /* Denna tagg visar att något har en spännvidd som sträcker sig över dess underelement. */
 span:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 1s; /* Animation-delay gör det som står dvs gör en delay på animationen så att den inte börjar direkt utan efter antal s */
 }
 span:nth-child(3) {
   animation-delay: 1.5s;
