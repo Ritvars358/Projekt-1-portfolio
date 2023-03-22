@@ -214,18 +214,115 @@ span:nth-child(7) {
 }
 /* Main menu buttons slut här */
 
-body {
-  background-color: tan;
+.mobile-menu {
+  /* Don't show the mobile menu bar in normal modes */
+  display: none;
 }
 
-@media screen and (max-width: 992px) {
-  .main-content__history {
-    display: block;
+.icon-hamburger {
+  --btn-hamburger: var(--fg-clr-white);
+
+  width: 20px;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.icon-hamburger .line {
+  /* Morph hamburger button to open/close states */
+  transition: rotate 200ms 0ms ease-in, transform 200ms 200ms ease-in,
+    opacity 0ms 200ms;
+
+  transform-origin: center;
+}
+
+.icon-hamburger.morphToClose .line {
+  transition: rotate 200ms ease-in 200ms, transform 200ms ease-in,
+    opacity 0ms 200ms;
+
+  transform-origin: center;
+}
+
+.icon-hamburger.morphToClose .top {
+  transform: translateY(20px);
+  rotate: 45deg;
+}
+
+.icon-hamburger.morphToClose .middle {
+  opacity: 0;
+}
+
+.icon-hamburger.morphToClose .bottom {
+  transform: translateY(-20px);
+  rotate: -45deg;
+}
+
+/* link styling */
+.mobile-link {
+  color: white;
+}
+
+.mobile-link:visited {
+  color: white;
+}
+
+@media (max-width: 35em) {
+  /* Mobile view */
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    background: blue;
+    padding-inline: 0.5rem;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .main-content__history {
-    display: block;
+  .menu_list {
+    display: none;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  .mobile-menu__title {
+    color: white;
+  }
+
+  .primary-navigation {
+    position: fixed;
+    inset: 35px 0 0 10%;
+    background: white;
+    padding: min(5vh, 10rem);
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .primary-navigation__links {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  .primary-navigation.open {
+    transform: translateX(0%);
+  }
+
+  .btn-hamburger {
+    display: flex;
+    background: transparent;
+    border: 0;
+  }
+
+  li .nav-link:active {
+    background: var(--link-clr-active);
+    color: var(--fg-clr-white);
+    box-shadow: none;
+  }
+
+  .nav-link:hover {
+    background: var(--link-clr-hover);
+    color: var(--fg-clr-white);
+    box-shadow: none;
   }
 }
