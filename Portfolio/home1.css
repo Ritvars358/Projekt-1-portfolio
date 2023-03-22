@@ -213,3 +213,19 @@ span:nth-child(7) {
   background-color: rgb(49, 14, 73);
 }
 /* Main menu buttons slut här */
+
+body {
+  background-color: tan;
+}
+
+@media screen and (max-width: 992px) {
+  .main-content__history {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-content__history {
+    display: block;
+  }
+}
