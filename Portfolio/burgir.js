@@ -1,3 +1,6 @@
-const navBar = document.querySelector(".menu_list");
+const menu = document.querySelector(".mobile-menu");
 
-const naviBar = document.querySelector(".mobile-menu__button");
+menu.addEventListener("click", function () {
+  document.querySelector(".menu_list").classList.toggle("show");
+  menu.classList.toggle("show");
+});
